@@ -9,8 +9,8 @@ import java.util.List;
 
 public class FileParser {
 
-    ReactantFile fileToParse;
     List<AttributeValue<String,String>> reactantFileBuffer = new ArrayList<AttributeValue<String, String>>();
+    ReactantFile fileToParse;
     BufferedReader bufferedReader;
     File file;
 
@@ -28,6 +28,7 @@ public class FileParser {
     }
 
     public void readFile(ReactantFile fileToParse) {
+
         file = new File (fileToParse.getFilePath());
 
         try {
@@ -39,6 +40,7 @@ public class FileParser {
     }
 
     public void writeFileToBuffer(ReactantFile fileToParse) {
+
         readFile(fileToParse);
 
         String line = "";
@@ -74,10 +76,12 @@ public class FileParser {
     }
 
     public void updateBuffer(AttributeValue currentLine) {
+
         reactantFileBuffer.add(currentLine);
     }
 
     public boolean lineToBeSkipped(String line) {
+
         return (line.startsWith("/") && (line.trim() != fileToParse.getRecordMarker()))
                 ||  line.startsWith(fileToParse.getCommentDelimiter()) || line.isEmpty();
     }
