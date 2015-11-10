@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="checkpoint.andela.parser.FileParserTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-11-10T19:25:32" hostname="GRACE-PC" time="0.14">
+  <properties/>
+  <testcase name="testParseLine" classname="checkpoint.andela.parser.FileParserTest" time="0.007"/>
+  <testcase name="testLineToBeSkippedWhenlineOfTextfileDoesNotStartWithSpecialCharacters" classname="checkpoint.andela.parser.FileParserTest" time="0.0"/>
+  <testcase name="testWriteFileToBuffer" classname="checkpoint.andela.parser.FileParserTest" time="0.128"/>
+  <testcase name="testLineToBeSkippedWhenlineOfTextfileIsEmpty" classname="checkpoint.andela.parser.FileParserTest" time="0.0"/>
+  <testcase name="testLineToBeSkippedWhenLineOfTextfileStartswithCommentDelimiterHash" classname="checkpoint.andela.parser.FileParserTest" time="0.0"/>
+  <testcase name="testLineToBeSkippedWhenLineStartswithRecordMarkerDoubleSlash" classname="checkpoint.andela.parser.FileParserTest" time="0.002"/>
+  <testcase name="testParseRecordMarker" classname="checkpoint.andela.parser.FileParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
