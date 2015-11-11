@@ -22,16 +22,13 @@ public class FileParserTest extends TestCase {
     public void setUp() throws Exception {
         super.setUp();
 
-        String testfilePath = "C:\\Users\\GRACE\\.IdeaIC14\\Checkpoints\\checkpoint2\\reactions.DAT";
-        fileToParse = new ReactantFile(testfilePath," - ","//","#");
-        file = new File(fileToParse.getFilePath());
+        fileToParse = new ReactantFile(Config.reactantFilePath," - ","//","#");
         fileParser = new FileParser(fileToParse);
     }
 
     @Test
     public void testWriteFileToBuffer() throws Exception {
         fileParser.writeFileToBuffer(fileToParse);
-        fileParser.getReactantFileBuffer();
     }
     @Test
     public void testParseLine() throws Exception {

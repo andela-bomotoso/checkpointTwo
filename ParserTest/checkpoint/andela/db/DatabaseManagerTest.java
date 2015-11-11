@@ -1,5 +1,6 @@
 package checkpoint.andela.db;
 
+import checkpoint.andela.parser.Config;
 import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,10 +16,11 @@ public class DatabaseManagerTest extends TestCase {
     @Before
     public void setUp() throws Exception {
         super.setUp();
-        databaseManager =  new DatabaseManager("jdbc:mysql://localhost/","root","admin");
+        databaseManager =  new DatabaseManager(Config.databaseURL,Config.databaseUsername,Config.databasePassword);
         databaseManager.establishConnection();
     }
 
+    @Test
     public void testEstablishConnection() throws Exception {
         Connection connection =  databaseManager.establishConnection();
         assertNotNull(connection);

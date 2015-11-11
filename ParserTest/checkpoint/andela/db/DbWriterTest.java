@@ -21,11 +21,11 @@ public class DbWriterTest extends TestCase {
 
     @Override
     public void setUp() throws Exception {
-        super.setUp();
-        databaseManager = new DatabaseManager("jdbc:mysql://localhost/", "root", "admin");
-        String testFilePath = "C:\\Users\\GRACE\\.IdeaIC14\\Checkpoints\\checkpointTwo\\reactions.DAT";
 
-        reactantFile = new ReactantFile(testFilePath, " - ", "//", "#");
+        super.setUp();
+        databaseManager = new DatabaseManager(Config.databaseURL, Config.databaseUsername, Config.databasePassword);
+
+        reactantFile = new ReactantFile(Config.reactantFilePath, " - ", "//", "#");
 
         tableFields = new ArrayList<String>(Arrays.asList("UNIQUE-ID", "TYPES", "COMMON-NAME", "ATOM-MAPPINGS"));
 
@@ -39,7 +39,7 @@ public class DbWriterTest extends TestCase {
     @Test
     public void testWriteBufferToDatabaseWhenDatabaseHasAValidRecord() throws Exception {
 
-        dbWriter.writeBufferToDatabase(fileParser.getReactantFileBuffer(), "reactiondb", "reactions", tableFields, "//");
+        dbWriter.writeBufferToDatabase(fileParser.writeFileToBuffer(reactantFile), "reactiondb", "reactions", tableFields, "//");
 
         String queryCheck = "SELECT * from reactiondb.reactions WHERE `unique-id` = " + "\"RIBOFLAVINSYNDEAM-RXN\"";
         Statement statement = databaseManager.establishConnection().createStatement();
@@ -51,7 +51,7 @@ public class DbWriterTest extends TestCase {
     @Test
     public void testWriteBufferToDatabaseWhenDatabaseHasNoValidRecord() throws Exception {
 
-        dbWriter.writeBufferToDatabase(fileParser.getReactantFileBuffer(), "reactiondb", "reactions", tableFields, "//");
+        dbWriter.writeBufferToDatabase(fileParser.writeFileToBuffer(reactantFile), "reactiondb", "reactions", tableFields, "//");
 
         String queryCheck = "SELECT * from reactiondb.reactions WHERE `unique-id` = " + "\"C10-L1-0119\"";
         Statement statement = databaseManager.establishConnection().createStatement();

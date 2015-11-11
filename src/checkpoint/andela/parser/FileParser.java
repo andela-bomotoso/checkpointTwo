@@ -9,7 +9,6 @@ import java.util.List;
 
 public class FileParser {
 
-    List<AttributeValue<String,String>> reactantFileBuffer = new ArrayList<AttributeValue<String, String>>();
     ReactantFile fileToParse;
     BufferedReader bufferedReader;
     File file;
@@ -19,15 +18,8 @@ public class FileParser {
          this.fileToParse = fileToParse;
     }
 
-    public List<AttributeValue<String, String>> getReactantFileBuffer() {
-        return reactantFileBuffer;
-    }
 
-    public void setReactantFileBuffer(List<AttributeValue<String, String>> reactantFileBuffer) {
-        this.reactantFileBuffer = reactantFileBuffer;
-    }
-
-    public void readFile(ReactantFile fileToParse) {
+    public BufferedReader readFile(ReactantFile fileToParse) {
 
         file = new File (fileToParse.getFilePath());
 
@@ -37,9 +29,11 @@ public class FileParser {
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
+        return bufferedReader;
     }
 
-    public void writeFileToBuffer(ReactantFile fileToParse) {
+    public List<AttributeValue<String,String>> writeFileToBuffer(ReactantFile fileToParse) {
+        List<AttributeValue<String,String>> reactantFileBuffer = new ArrayList<AttributeValue<String, String>>();
 
         readFile(fileToParse);
 
@@ -49,17 +43,18 @@ public class FileParser {
             while ((line = bufferedReader.readLine()) != null) {
 
                 if (!lineToBeSkipped(line)) {
-                    updateBuffer(parseLine(line));
+                    reactantFileBuffer.add(parseLine(line));
                 }
 
                 else if (line.startsWith(fileToParse.getRecordMarker())) {
-                   updateBuffer(parseRecordMarker());
+                   reactantFileBuffer.add(parseRecordMarker());
                 }
             }
 
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
+        return reactantFileBuffer;
     }
 
     public AttributeValue parseLine(String line) {
@@ -73,11 +68,6 @@ public class FileParser {
 
         AttributeValue currentRecordMarker = new AttributeValue(fileToParse.getRecordMarker(), "");
         return currentRecordMarker;
-    }
-
-    public void updateBuffer(AttributeValue currentLine) {
-
-        reactantFileBuffer.add(currentLine);
     }
 
     public boolean lineToBeSkipped(String line) {

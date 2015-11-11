@@ -14,14 +14,14 @@ public class Main {
 
     public static void main(String[]args) {
 
-        DatabaseManager databaseManager = new DatabaseManager("jdbc:mysql://localhost/", "root", "admin");
-        String filePath = "C:\\Users\\GRACE\\.IdeaIC14\\Checkpoints\\checkpoint2\\reactions.DAT";
-        ReactantFile  reactantFile = new ReactantFile(filePath," - ","//","#");
+        DatabaseManager databaseManager = new DatabaseManager(Config.databaseURL, Config.databaseUsername, Config.databasePassword);
+        //String filePath = "C:\\Users\\GRACE\\.IdeaIC14\\Checkpoints\\checkpoint2\\reactions.DAT";
+        ReactantFile  reactantFile = new ReactantFile(Config.reactantFilePath," - ","//","#");
         FileParser fileParser = new FileParser(reactantFile);
         fileParser.writeFileToBuffer(reactantFile);
         List<String> tableFields = new ArrayList<String>(Arrays.asList("UNIQUE-ID", "TYPES", "COMMON-NAME", "ATOM-MAPPINGS"));
         List<AttributeValue<String, String>> bufferedFileContent;
-        bufferedFileContent = fileParser.getReactantFileBuffer();
+        bufferedFileContent = fileParser.writeFileToBuffer(reactantFile);
         DbWriter dbWriter = new DbWriter( databaseManager);
         dbWriter.writeBufferToDatabase(bufferedFileContent,"reactiondb","reactions",tableFields,"//");
 
