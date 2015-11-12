@@ -1,22 +1,43 @@
 package checkpoint.andela.thread;
 
+import checkpoint.andela.parser.Config;
 import junit.framework.TestCase;
+import org.junit.Test;
 
-/**
- * Created by GRACE on 11/11/2015.
- */
+import java.io.File;
+
+
 public class LogWriterThreadTest extends TestCase {
 
+    LogWriterThread logWriterThread;
+    String filePath1;
+    String filePath2;
+
+
     public void setUp() throws Exception {
+
         super.setUp();
-
     }
 
-    public void testCheckIfFileExist() throws Exception {
+    @Test
+    public void testCheckIfFileExistWhenFileDoesNotExist() throws Exception {
 
+        logWriterThread = new LogWriterThread(Config.nonExistentFilePath);
+        File file1 = new File(Config.nonExistentFilePath);
+        assertFalse(file1.exists());
+        logWriterThread.checkIfFileExist();
+        assertTrue(file1.exists());
+        file1.delete();
     }
 
-    public void testWriteBufferToFile() throws Exception {
+    @Test
+    public void testCheckFileExistWhenFileExists() throws Exception {
+
+        logWriterThread = new LogWriterThread(Config.logFilePath);
+        File file2 = new File(Config.logFilePath);
+        assertTrue(file2.exists());
+        logWriterThread.checkIfFileExist();
+        assertTrue(file2.exists());
 
     }
 }

@@ -1,6 +1,7 @@
 package checkpoint.andela.db;
 
 import checkpoint.andela.parser.*;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import junit.framework.TestCase;
 import org.junit.Test;
 

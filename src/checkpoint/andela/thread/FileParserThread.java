@@ -9,8 +9,6 @@ import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
-import java.io.BufferedReader;
-import java.io.File;
 import java.util.List;
 
 public class FileParserThread implements Runnable{
@@ -40,7 +38,7 @@ public class FileParserThread implements Runnable{
 
             if(currentLine.attribute.equals("UNIQUE-ID") && runState == true) {
                 String activityTime = dateTimeFormatter.print(DateTime.now());
-                ThreadLogger.logWriteActivity(activityTime, currentLine);
+                ThreadLogger.logWriteActivity(activityTime, currentLine.value.toString());
             }
         }
         runState = false;

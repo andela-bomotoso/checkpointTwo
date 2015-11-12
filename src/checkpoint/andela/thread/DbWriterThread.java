@@ -46,15 +46,13 @@ public class DbWriterThread implements Runnable{
 
                 if(bufferRead.attribute.equals("UNIQUE-ID") && runState == true) {
                     String activityTime = dateTimeFormatter.print(DateTime.now());
-                    ThreadLogger.logReadActivity(activityTime, bufferRead);
+                    ThreadLogger.logReadActivity(activityTime, bufferRead.value.toString());
                 }
 
                 if (bufferRead.attribute.equals(recordMaker)&& runState == true) {
                     writeRecordToDatabase(bufferedRecord);
                 }
                 runState = FileParserThread.runState;
-                //System.out.println(runState);
-
             }
             runState = false;
     }

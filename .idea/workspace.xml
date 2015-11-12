@@ -2,9 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c1059cb-003f-4d35-ba5c-4367db963c87" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/DbWriterThreadTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/LogWriterThreadTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/ThreadLoggerTest.java" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\ParserTest\checkpoint\andela\thread\DbWriterThreadTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\classes\main\checkpoint\andela\parser\Parser.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\classes\main\checkpoint\andela\parser\reactantFileParser.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\reports\tests\classes\checkpoint.andela.db.DatabaseManagerTest.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\reports\tests\classes\checkpoint.andela.db.DbWriterTest.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\reports\tests\classes\checkpoint.andela.parser.FileParserTest.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\reports\tests\packages\checkpoint.andela.db.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\reports\tests\packages\checkpoint.andela.parser.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\test-results\TEST-checkpoint.andela.db.DatabaseManagerTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\test-results\TEST-checkpoint.andela.db.DbWriterTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\GRACE\.IdeaIC14\Checkpoints\checkpointTwo\build\test-results\TEST-checkpoint.andela.parser.FileParserTest.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/checkpoint/andela/parser/Config.class" afterPath="$PROJECT_DIR$/build/classes/main/checkpoint/andela/parser/Config.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/checkpoint/andela/db/DbWriterTest.class" afterPath="$PROJECT_DIR$/build/classes/test/checkpoint/andela/db/DbWriterTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/checkpoint/andela/thread/DbWriterThread.class" afterPath="$PROJECT_DIR$/build/classes/main/checkpoint/andela/thread/DbWriterThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/checkpoint/andela/parser/FileParserTest.class" afterPath="$PROJECT_DIR$/build/classes/test/checkpoint/andela/parser/FileParserTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/checkpoint/andela/thread/FileParserThread.class" afterPath="$PROJECT_DIR$/build/classes/main/checkpoint/andela/thread/FileParserThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/checkpoint/andela/thread/ThreadLogger.class" afterPath="$PROJECT_DIR$/build/classes/main/checkpoint/andela/thread/ThreadLogger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" afterPath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/parser/Config.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/parser/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParserTest/checkpoint/andela/db/DbWriterTest.java" afterPath="$PROJECT_DIR$/ParserTest/checkpoint/andela/db/DbWriterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/thread/DbWriterThread.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/thread/DbWriterThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/FileParserTest.java" afterPath="$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/FileParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/thread/FileParserThread.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/thread/FileParserThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/LogWriterThreadTest.java" afterPath="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/LogWriterThreadTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/thread/ThreadLogger.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/thread/ThreadLogger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/ThreadLoggerTest.java" afterPath="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/ThreadLoggerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactions.txt" afterPath="$PROJECT_DIR$/reactions.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="checkpointTwo.iws" />
@@ -24,7 +54,7 @@
     <SUITE FILE_PATH="coverage/checkpointTwo$checkpoint_andela_in_checkpointTwo.coverage" NAME="checkpoint.andela in checkpointTwo Coverage Results" MODIFIED="1447194536662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>checkpoint.andela.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/checkpointTwo$All_in_checkpointTwo.coverage" NAME="All in checkpointTwo Coverage Results" MODIFIED="1447281300589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/checkpointTwo$All_in_checkpointTwo.coverage" NAME="All in checkpointTwo Coverage Results" MODIFIED="1447288388572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -62,19 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/FileParserThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogWriterThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/LogWriterThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,7 +102,29 @@
         <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/LogWriterThreadTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileParserTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/FileParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.90029323">
+              <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reactions.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reactions.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="61" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -94,20 +134,10 @@
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/DbWriterThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbWriterThreadTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/DbWriterThreadTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -124,41 +154,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadLogger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/ThreadLogger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreadLoggerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/ThreadLoggerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14488636">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DbWriterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/db/DbWriterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileParserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/FileParserTest.java">
+      <file leaf-file-name="FileParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/parser/FileParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <element signature="e#913#945#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReactantFile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/parser/ReactantFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="e#1119#1120#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reactions.DAT" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reactions.DAT">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="17" selection-start-line="63" selection-start-column="0" selection-end-line="68" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -397,19 +431,19 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/parser/FileParser.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/thread/LogWriterThread.java" />
-        <option value="$PROJECT_DIR$/src/checkpoint/andela/thread/ThreadLogger.java" />
-        <option value="$PROJECT_DIR$/src/checkpoint/andela/thread/FileParserThread.java" />
-        <option value="$PROJECT_DIR$/src/checkpoint/andela/thread/DbWriterThread.java" />
-        <option value="$PROJECT_DIR$/reactions.txt" />
-        <option value="$PROJECT_DIR$/src/checkpoint/andela/parser/Config.java" />
         <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/Main.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/thread/Main.java" />
         <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/db/DatabaseManagerTest.java" />
-        <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/FileParserTest.java" />
-        <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/db/DbWriterTest.java" />
-        <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/DbWriterThreadTest.java" />
-        <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/LogWriterThreadTest.java" />
+        <option value="$PROJECT_DIR$/src/checkpoint/andela/thread/ThreadLogger.java" />
+        <option value="$PROJECT_DIR$/reactions.txt" />
         <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/ThreadLoggerTest.java" />
+        <option value="$PROJECT_DIR$/src/checkpoint/andela/parser/Config.java" />
+        <option value="$PROJECT_DIR$/src/checkpoint/andela/thread/DbWriterThread.java" />
+        <option value="$PROJECT_DIR$/src/checkpoint/andela/thread/FileParserThread.java" />
+        <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/DbWriterThreadTest.java" />
+        <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/db/DbWriterTest.java" />
+        <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/LogWriterThreadTest.java" />
+        <option value="$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/FileParserTest.java" />
       </list>
     </option>
   </component>
@@ -535,6 +569,10 @@
               <option name="myItemId" value="andela" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -573,6 +611,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="andela" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thread" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -703,25 +745,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Tests in 'checkpoint.andela.db'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests checkpoint.andela.db.*" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="cleanTest" />
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
     <configuration default="false" name="All in checkpointTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="checkpointTwo" />
@@ -741,6 +764,25 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ThreadLoggerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests checkpoint.andela.thread.ThreadLoggerTest" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanTest" />
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -894,16 +936,16 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Gradle.testCreateTable" />
       <item index="2" class="java.lang.String" itemvalue="Application.Main (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.Tests in 'checkpoint.andela.db'" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in checkpointTwo" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.All in checkpointTwo" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.ThreadLoggerTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in checkpointTwo" />
         <item index="1" class="java.lang.String" itemvalue="Application.Main (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.testCreateTable" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.Tests in 'checkpoint.andela.db'" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.ThreadLoggerTest" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.testCreateTable" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -926,23 +968,23 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32495812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36348408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29831287" sideWeight="0.52894735" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38190955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37960124" sideWeight="0.5311653" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22009203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29831287" sideWeight="0.47105262" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22546013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.4688347" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.279732" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -964,7 +1006,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/checkpoint/andela/parser/FileParser.java</url>
+          <line>34</line>
+          <properties class="checkpoint.andela.parser.FileParser" method="writeFileToBuffer" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1026,7 +1076,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <element signature="e#1119#1120#0" expanded="false" />
+            <element signature="e#1119#1120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1099,7 +1149,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <element signature="e#1119#1120#0" expanded="false" />
+            <element signature="e#1119#1120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1138,7 +1188,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <element signature="e#1119#1120#0" expanded="false" />
+            <element signature="e#1119#1120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1170,7 +1220,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <element signature="e#1119#1120#0" expanded="false" />
+            <element signature="e#1119#1120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1221,16 +1271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/parser/ReactantFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#1119#1120#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1242,55 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/buffer/DataBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/buffer/LogBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/parser/FileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactions.DAT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/parser/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1312,6 +1303,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/ThreadLoggerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/LogWriterThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/ThreadLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/parser/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="111" selection-start-line="9" selection-start-column="111" selection-end-line="9" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/buffer/DataBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/buffer/LogBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="61" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactions.DAT">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="17" selection-start-line="63" selection-start-column="0" selection-end-line="68" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/FileParserThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/DbWriterThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/parser/ReactantFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#1119#1120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/parser/FileParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="e#913#945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/db/DatabaseManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1325,51 +1420,7 @@
     <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/db/DbWriterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/FileParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/DbWriterThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/DbWriterThreadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/FileParserThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/LogWriterThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1377,23 +1428,17 @@
     <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/LogWriterThreadTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/thread/ThreadLogger.java">
+    <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/parser/FileParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParserTest/checkpoint/andela/thread/ThreadLoggerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14488636">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.90029323">
+          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
           <folding />
         </state>
       </provider>
