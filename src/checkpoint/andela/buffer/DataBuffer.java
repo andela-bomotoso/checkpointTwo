@@ -10,6 +10,7 @@ public class DataBuffer implements Buffer {
     public static boolean inUse = false;
 
     public static void setBuffer(AttributeValue currentLine) {
+
         try {
 
             sharedBuffer.put(currentLine);
@@ -17,10 +18,10 @@ public class DataBuffer implements Buffer {
         } catch (InterruptedException interruptedException) {
             interruptedException.printStackTrace();
         }
-
     }
 
     public static AttributeValue getBuffer() {
+
         AttributeValue currentLog = null;
 
         try {
@@ -29,7 +30,7 @@ public class DataBuffer implements Buffer {
         } catch(InterruptedException interruptedException) {
             interruptedException.printStackTrace();
         }
-
         return currentLog;
     }
+
 }

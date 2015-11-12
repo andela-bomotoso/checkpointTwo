@@ -1,15 +1,12 @@
 package checkpoint.andela.thread;
 
 
-import checkpoint.andela.buffer.DataBuffer;
 import checkpoint.andela.db.DatabaseManager;
 import checkpoint.andela.db.DbWriter;
-import checkpoint.andela.parser.AttributeValue;
-import checkpoint.andela.parser.Config;
+import Util.Config;
 import checkpoint.andela.parser.FileParser;
 import checkpoint.andela.parser.ReactantFile;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +14,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Main {
+
     public static void main(String[]args){
 
         ReactantFile reactantFile = new ReactantFile(Config.reactantFilePath," - ","//","#");
@@ -41,6 +39,7 @@ public class Main {
         executorService.execute(fileParserThread);
         executorService.execute(dbWriterThread);
         executorService.execute(logWriterThread);
+
         executorService.shutdown();
 
     }

@@ -4,6 +4,7 @@ import checkpoint.andela.buffer.DataBuffer;
 import checkpoint.andela.db.DatabaseManager;
 import checkpoint.andela.db.DbWriter;
 import checkpoint.andela.parser.AttributeValue;
+import checkpoint.andela.parser.FileParser;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
@@ -25,7 +26,6 @@ public class DbWriterThread implements Runnable{
 
     public static boolean runState = true;
 
-
     public DbWriterThread(DbWriter dbWriter, String databaseName, String tableName,
                           List<String> tableFields, String recordMaker) {
 
@@ -41,22 +41,20 @@ public class DbWriterThread implements Runnable{
         List<AttributeValue<String,String>> bufferedRecord = new ArrayList<AttributeValue<String, String>>();
 
             while (runState) {
-                AttributeValue bufferRead = DataBuffer.getBuffer();
-                bufferedRecord.add(bufferRead);
+                    AttributeValue bufferRead = DataBuffer.getBuffer();
+                    bufferedRecord.add(bufferRead);
 
-                if(bufferRead.attribute.equals("UNIQUE-ID") && runState == true) {
-                    String activityTime = dateTimeFormatter.print(DateTime.now());
-                    ThreadLogger.logReadActivity(activityTime, bufferRead);
-                }
+                    if (bufferRead.attribute.equals("UNIQUE-ID")) {
+                        String activityTime = dateTimeFormatter.print(DateTime.now());
+                        ThreadLogger.logReadActivity(activityTime, bufferRead.value.toString());
+                    }
 
-                if (bufferRead.attribute.equals(recordMaker)&& runState == true) {
-                    writeRecordToDatabase(bufferedRecord);
-                }
-                runState = FileParserThread.runState;
-                //System.out.println(runState);
-
+                    if (bufferRead.attribute.equals(recordMaker)) {
+                        writeRecordToDatabase(bufferedRecord);
+                    }
+                    runState = FileParserThread.runState;
             }
-            runState = false;
+        runState = false;
     }
 
     public void writeRecordToDatabase(List<AttributeValue<String,String>> bufferedRecord) {

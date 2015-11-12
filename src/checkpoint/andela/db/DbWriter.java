@@ -1,6 +1,5 @@
 package checkpoint.andela.db;
 
-
 import checkpoint.andela.parser.AttributeValue;
 
 import java.util.ArrayList;
@@ -11,6 +10,7 @@ public class DbWriter {
     DatabaseManager databaseManager;
 
     public DbWriter( DatabaseManager databaseManager) {
+
         this.databaseManager = databaseManager;
     }
 
@@ -52,26 +52,5 @@ public class DbWriter {
         }
         values.set(index, values.get(index) + "," + currentValue);
     }
-
-//    public String generateInsertStatement(List<String> recordKeys, List<String> recordValues) {
-//        String fields = "";
-//        String values = "";
-//        String querySubstring = "";
-//
-//        for (int i = 0; i < recordKeys.size(); i++) {
-//
-//            fields += "`" + recordKeys.get(i) + "`,";
-//            values += "\"" + escapeDoubleQuotes(recordValues.get(i)) + "\",";
-//        }
-//
-//        querySubstring = "(" + databaseManager.removeLastCharacter(fields) + ") " +
-//                "VALUES " + "(" + databaseManager.removeLastCharacter(values) + ")";
-//
-//        return querySubstring;
-//    }
-//
-//    public String escapeDoubleQuotes(String str) {
-//        return str.replace("\"", "\\\"");
-//    }
 
 }

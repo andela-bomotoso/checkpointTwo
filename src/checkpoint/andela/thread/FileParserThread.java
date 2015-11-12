@@ -9,8 +9,6 @@ import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
-import java.io.BufferedReader;
-import java.io.File;
 import java.util.List;
 
 public class FileParserThread implements Runnable{
@@ -22,7 +20,7 @@ public class FileParserThread implements Runnable{
 
     DateTimeFormatter dateTimeFormatter = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss");
 
-    public static boolean runState = true;
+    public static boolean runState = false;
 
 
     public FileParserThread(FileParser fileParser,ReactantFile reactantFile) {
@@ -34,16 +32,14 @@ public class FileParserThread implements Runnable{
     public void run() {
 
         reactantFileBuffer = fileParser.writeFileToBuffer(reactantFile);
-
-        for(AttributeValue currentLine:reactantFileBuffer) {
-            DataBuffer.setBuffer(currentLine);
-
-            if(currentLine.attribute.equals("UNIQUE-ID") && runState == true) {
-                String activityTime = dateTimeFormatter.print(DateTime.now());
-                ThreadLogger.logWriteActivity(activityTime, currentLine);
+            for (AttributeValue currentLine : reactantFileBuffer) {
+                runState = true;
+                DataBuffer.setBuffer(currentLine);
+                if (currentLine.attribute.equals("UNIQUE-ID")) {
+                    String activityTime = dateTimeFormatter.print(DateTime.now());
+                    ThreadLogger.logWriteActivity(activityTime, currentLine.value.toString());
+                }
             }
-        }
         runState = false;
-
     }
 }

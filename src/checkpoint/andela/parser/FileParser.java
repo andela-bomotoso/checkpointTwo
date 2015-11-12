@@ -37,7 +37,7 @@ public class FileParser {
 
         readFile(fileToParse);
 
-        String line = "";
+        String line;
 
         try {
             while ((line = bufferedReader.readLine()) != null) {
@@ -75,4 +75,5 @@ public class FileParser {
         return (line.startsWith("/") && (line.trim() != fileToParse.getRecordMarker()))
                 ||  line.startsWith(fileToParse.getCommentDelimiter()) || line.isEmpty();
     }
+
 }

@@ -1,12 +1,10 @@
 package checkpoint.andela.parser;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
+import Util.Config;
 import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.xml.crypto.dsig.keyinfo.KeyValue;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +12,7 @@ import java.util.List;
 public class FileParserTest extends TestCase {
 
     ReactantFile fileToParse;
-    File file;
+
     FileParser fileParser;
     List<AttributeValue<String,String>> reactantFileBuffer = new ArrayList<AttributeValue<String, String>>();
 
@@ -43,10 +41,8 @@ public class FileParserTest extends TestCase {
 
     @Test
     public void testParseRecordMarker() throws Exception {
-        String line = "// ";
         assertEquals("//",fileParser.parseRecordMarker().attribute);
         assertEquals("",fileParser.parseRecordMarker().value);
-
     }
 
     @Test

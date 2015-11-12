@@ -1,5 +1,6 @@
 package checkpoint.andela.db;
 
+import Util.Config;
 import checkpoint.andela.parser.*;
 import junit.framework.TestCase;
 import org.junit.Test;
