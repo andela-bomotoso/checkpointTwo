@@ -26,7 +26,7 @@ public class FileParserTest extends TestCase {
 
     @Test
     public void testWriteFileToBuffer() throws Exception {
-        fileParser.writeFileToBuffer(fileToParse);
+        fileParser.writeFileToBuffer();
     }
     @Test
     public void testParseLine() throws Exception {

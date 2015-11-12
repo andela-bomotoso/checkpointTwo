@@ -32,17 +32,16 @@ public class DbWriterTest extends TestCase {
 
         fileParser = new FileParser(reactantFile);
 
-        fileParser.writeFileToBuffer(reactantFile);
+        fileParser.writeFileToBuffer();
 
         dbWriter = new DbWriter(databaseManager);
     }
 
     @Test
     public void testWriteBufferToDatabaseWhenDatabaseHasAValidRecord() throws Exception {
+        dbWriter.writeBufferToDatabase(fileParser.writeFileToBuffer(), "reactiondb", "reactions", tableFields, "//");
 
-        dbWriter.writeBufferToDatabase(fileParser.writeFileToBuffer(reactantFile), "reactiondb", "reactions", tableFields, "//");
-
-        String queryCheck = "SELECT * from reactiondb.reactions WHERE `unique-id` = " + "\"RIBOFLAVINSYNDEAM-RXN\"";
+        String queryCheck = "SELECT * from reactiondb.reactions WHERE `unique-id` = " + "\"RXN-8748\"";
         Statement statement = databaseManager.establishConnection().createStatement();
         ResultSet rs = statement.executeQuery(queryCheck);
         assertTrue(rs.absolute(1));
@@ -52,7 +51,7 @@ public class DbWriterTest extends TestCase {
     @Test
     public void testWriteBufferToDatabaseWhenDatabaseHasNoValidRecord() throws Exception {
 
-        dbWriter.writeBufferToDatabase(fileParser.writeFileToBuffer(reactantFile), "reactiondb", "reactions", tableFields, "//");
+        dbWriter.writeBufferToDatabase(fileParser.writeFileToBuffer(), "reactiondb", "reactions", tableFields, "//");
 
         String queryCheck = "SELECT * from reactiondb.reactions WHERE `unique-id` = " + "\"C10-L1-0119\"";
         Statement statement = databaseManager.establishConnection().createStatement();
