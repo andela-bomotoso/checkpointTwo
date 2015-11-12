@@ -22,8 +22,6 @@ public class DbWriterThread implements Runnable{
     DatabaseManager databaseManager;
     DbWriter dbWriter = new DbWriter(databaseManager);
 
-    DateTimeFormatter dateTimeFormatter = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss");
-
     public static boolean runState = true;
 
     public DbWriterThread(DbWriter dbWriter, String databaseName, String tableName,
@@ -40,20 +38,18 @@ public class DbWriterThread implements Runnable{
 
         List<AttributeValue<String,String>> bufferedRecord = new ArrayList<AttributeValue<String, String>>();
 
-            while (runState) {
-                    AttributeValue bufferRead = DataBuffer.getBuffer();
-                    bufferedRecord.add(bufferRead);
+        while (runState) {
 
-                    if (bufferRead.attribute.equals("UNIQUE-ID")) {
-                        String activityTime = dateTimeFormatter.print(DateTime.now());
-                        ThreadLogger.logReadActivity(activityTime, bufferRead.value.toString());
-                    }
+            AttributeValue bufferRead = DataBuffer.getBuffer();
+            bufferedRecord.add(bufferRead);
+            ThreadLogger.logReadActivity( bufferRead);
 
-                    if (bufferRead.attribute.equals(recordMaker)) {
-                        writeRecordToDatabase(bufferedRecord);
-                    }
-                    runState = FileParserThread.runState;
+            if (bufferRead.attribute.equals(recordMaker)) {
+                writeRecordToDatabase(bufferedRecord);
             }
+            runState = FileParserThread.runState;
+        }
+
         runState = false;
     }
 

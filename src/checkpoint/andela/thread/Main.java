@@ -34,7 +34,7 @@ public class Main {
 
         ExecutorService executorService = Executors.newCachedThreadPool();
 
-        fileParser.writeFileToBuffer(reactantFile);
+        fileParser.writeFileToBuffer();
 
         executorService.execute(fileParserThread);
         executorService.execute(dbWriterThread);

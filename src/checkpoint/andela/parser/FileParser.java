@@ -15,16 +15,16 @@ public class FileParser {
 
     public FileParser(ReactantFile fileToParse) {
 
-         this.fileToParse = fileToParse;
+        this.fileToParse = fileToParse;
     }
 
 
-    public BufferedReader readFile(ReactantFile fileToParse) {
+    public BufferedReader readFile() {
 
         file = new File (fileToParse.getFilePath());
 
         try {
-             bufferedReader = new BufferedReader(new FileReader(file));
+            bufferedReader = new BufferedReader(new FileReader(file));
 
         } catch (IOException ioException) {
             ioException.printStackTrace();
@@ -32,10 +32,10 @@ public class FileParser {
         return bufferedReader;
     }
 
-    public List<AttributeValue<String,String>> writeFileToBuffer(ReactantFile fileToParse) {
+    public List<AttributeValue<String,String>> writeFileToBuffer() {
         List<AttributeValue<String,String>> reactantFileBuffer = new ArrayList<AttributeValue<String, String>>();
 
-        readFile(fileToParse);
+        readFile();
 
         String line;
 
@@ -47,7 +47,7 @@ public class FileParser {
                 }
 
                 else if (line.startsWith(fileToParse.getRecordMarker())) {
-                   reactantFileBuffer.add(parseRecordMarker());
+                    reactantFileBuffer.add(parseRecordMarker());
                 }
             }
 

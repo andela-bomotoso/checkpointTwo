@@ -5,7 +5,6 @@ import checkpoint.andela.buffer.DataBuffer;
 import checkpoint.andela.parser.AttributeValue;
 import checkpoint.andela.parser.FileParser;
 import checkpoint.andela.parser.ReactantFile;
-import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
@@ -18,8 +17,6 @@ public class FileParserThread implements Runnable{
 
     FileParser fileParser = new FileParser(reactantFile);
 
-    DateTimeFormatter dateTimeFormatter = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss");
-
     public static boolean runState = false;
 
 
@@ -31,15 +28,14 @@ public class FileParserThread implements Runnable{
 
     public void run() {
 
-        reactantFileBuffer = fileParser.writeFileToBuffer(reactantFile);
+        reactantFileBuffer = fileParser.writeFileToBuffer();
             for (AttributeValue currentLine : reactantFileBuffer) {
+
                 runState = true;
                 DataBuffer.setBuffer(currentLine);
-                if (currentLine.attribute.equals("UNIQUE-ID")) {
-                    String activityTime = dateTimeFormatter.print(DateTime.now());
-                    ThreadLogger.logWriteActivity(activityTime, currentLine.value.toString());
-                }
+                    ThreadLogger.logWriteActivity(currentLine);
             }
+
         runState = false;
     }
 }
