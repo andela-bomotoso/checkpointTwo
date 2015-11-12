@@ -1,6 +1,6 @@
 package checkpoint.andela.thread;
 
-import checkpoint.andela.parser.Config;
+import Util.Config;
 import junit.framework.TestCase;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package checkpoint.andela.parser;
+package Util;
 
 /**
  * Created by GRACE on 11/11/2015.
