@@ -1,6 +1,5 @@
 package checkpoint.andela.parser;
 
-
 public class ReactantFile  {
 
     private String filePath;
@@ -46,4 +45,5 @@ public class ReactantFile  {
     public void setKeyValueSeparator(String keyValueSeparator) {
         this.keyValueSeparator = keyValueSeparator;
     }
+
 }

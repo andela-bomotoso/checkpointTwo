@@ -41,6 +41,5 @@ public class FileParserThread implements Runnable{
                 }
             }
         runState = false;
-
     }
 }

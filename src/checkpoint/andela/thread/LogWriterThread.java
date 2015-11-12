@@ -13,7 +13,6 @@ public class LogWriterThread implements Runnable{
     private BufferedWriter bufferedWriter;
     private FileWriter fileWriter;
     private boolean runState;
-    String logKey;
 
     public LogWriterThread(String filePath) {
 
@@ -48,8 +47,8 @@ public class LogWriterThread implements Runnable{
     }
 
     public void run() {
-        runState = true;
 
+        runState = true;
         while (runState){
 
             String currentLog = LogBuffer.getBuffer();
@@ -57,4 +56,5 @@ public class LogWriterThread implements Runnable{
             runState = DbWriterThread.runState;
         }
     }
+
 }

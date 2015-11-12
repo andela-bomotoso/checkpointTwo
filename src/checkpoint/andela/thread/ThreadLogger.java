@@ -12,6 +12,7 @@ public class ThreadLogger {
 
     public static void logReadActivity(String activityTime,String value)
     {
+
         String currentLog = "DbWriter Thread " +"(" +activityTime+ ")----collected UNIQUE ID " + value + " from buffer" ;
         LogBuffer.setBuffer(currentLog);
     }

@@ -5,15 +5,13 @@ import checkpoint.andela.parser.AttributeValue;
 import java.io.BufferedReader;
 import java.util.concurrent.ArrayBlockingQueue;
 
-/**
- * Created by GRACE on 11/11/2015.
- */
 public class LogBuffer  implements Buffer{
 
     private static ArrayBlockingQueue<String> logBuffer = new ArrayBlockingQueue<String>(1);
     public static boolean inUse = false;
 
     public static void setBuffer(String currentLine) {
+
         try {
 
             logBuffer.put(currentLine);
@@ -21,10 +19,10 @@ public class LogBuffer  implements Buffer{
         } catch (InterruptedException interruptedException) {
             interruptedException.printStackTrace();
         }
-
     }
 
     public static String getBuffer() {
+
         String currentLog = null;
 
         try {
@@ -36,4 +34,5 @@ public class LogBuffer  implements Buffer{
 
         return currentLog;
     }
+
 }
