@@ -8,25 +8,38 @@ import org.joda.time.format.DateTimeFormatter;
 
 public class ThreadLogger {
 
-    static String activityTime = DateTime.now().toString("yyyy-MM-dd HH:mm:ss");
+    public enum LogType {
+        write,
+        read
+    }
 
-    public static void logWriteActivity( AttributeValue currentLine) {
+    static String activityTime;
+    static String attribute;
+    static String value;
 
-        String attribute = currentLine.attribute.toString();
-        String value = currentLine.value.toString();
+    public static void logActivity(AttributeValue currentLine, LogType logType) {
+
+        attribute = currentLine.attribute.toString();
+        value = currentLine.value.toString();
+
         if(attribute.equals(Config.reactantFilePrimaryKey)) {
-            String currentLog = "FileParser Thread " + "(" + activityTime + ")----wrote " + Config.reactantFilePrimaryKey +" "+ value + " to buffer";
+
+            String currentLog = getLogMessage(logType);
             LogBuffer.setBuffer(currentLog);
         }
     }
 
-    public static void logReadActivity(AttributeValue currentLine)
-    {
-        String attribute = currentLine.attribute.toString();
-        String value = currentLine.value.toString();
-        if(attribute.equals(Config.reactantFilePrimaryKey)) {
-            String currentLog = "DbWriter Thread " + "(" + activityTime + ")----collected " + Config.reactantFilePrimaryKey + " "+value + " from buffer";
-            LogBuffer.setBuffer(currentLog);
+    private static String getLogMessage(LogType logType) {
+
+        String currentLog;
+        activityTime = DateTime.now().toString("yyyy-MM-dd HH:mm:ss");
+
+        if (logType == LogType.write) {
+            currentLog = "FileParser Thread " + "(" + activityTime + ")----wrote " + Config.reactantFilePrimaryKey +" "+ value + " to buffer";
         }
+        else {
+            currentLog = "DbWriter Thread " + "(" + activityTime + ")----collected " + Config.reactantFilePrimaryKey +" "+ value + " from buffer";
+        }
+        return currentLog;
     }
 }
