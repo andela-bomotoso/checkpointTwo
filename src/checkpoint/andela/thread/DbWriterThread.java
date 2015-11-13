@@ -22,7 +22,7 @@ public class DbWriterThread implements Runnable{
     DatabaseManager databaseManager;
     DbWriter dbWriter = new DbWriter(databaseManager);
 
-    public static boolean runState = true;
+    public static boolean runState;
 
     public DbWriterThread(DbWriter dbWriter, String databaseName, String tableName,
                           List<String> tableFields, String recordMaker) {
@@ -36,13 +36,14 @@ public class DbWriterThread implements Runnable{
 
     public void run() {
 
+        runState = true;
         List<AttributeValue<String,String>> bufferedRecord = new ArrayList<AttributeValue<String, String>>();
 
         while (runState) {
 
             AttributeValue bufferRead = DataBuffer.getBuffer();
             bufferedRecord.add(bufferRead);
-            ThreadLogger.logReadActivity( bufferRead);
+            ThreadLogger.logActivity(bufferRead, ThreadLogger.LogType.read);
 
             if (bufferRead.attribute.equals(recordMaker)) {
                 writeRecordToDatabase(bufferedRecord);

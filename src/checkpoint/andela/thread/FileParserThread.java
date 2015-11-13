@@ -33,7 +33,7 @@ public class FileParserThread implements Runnable{
 
                 runState = true;
                 DataBuffer.setBuffer(currentLine);
-                    ThreadLogger.logWriteActivity(currentLine);
+                    ThreadLogger.logActivity(currentLine, ThreadLogger.LogType.write);
             }
 
         runState = false;
